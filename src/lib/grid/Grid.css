@@ -1,0 +1,36 @@
+.grid-product-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product-container {
+    border: solid 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.product-tag-container {
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-tag {
+    background-color: rgb(239, 247, 242);
+    border-radius: 3px;
+    color: rgb(32, 128, 65);
+    padding: 2px 5px;
+}
+
+.product-original-price {
+    text-decoration: line-through;
+}
