@@ -5,5 +5,5 @@ metadata:
   description: An example of a Backstage application.
 spec:
   type: website
-  owner: user:guest
+  owner: group:fe-tooling
   lifecycle: experimental
