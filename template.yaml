@@ -5,7 +5,9 @@ metadata:
   name: example-nodejs-template-2
   title: Example Node.js Template 2
   description: An example template for the scaffolder that creates a simple Node.js service
-  tags: ['ReactJS', 'Next']
+  tags:
+    - reactJS
+    - next
 spec:
   owner: group:devs
   type: website
