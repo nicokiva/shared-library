@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: shared-library
+  name: reusable-app
   description: An example of a Backstage application.
 spec:
   type: website
