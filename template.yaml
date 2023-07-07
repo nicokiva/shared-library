@@ -24,10 +24,6 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
-        age:
-          title: Your age
-          type: number
-          description: Please type your age
     - title: Choose a location
       required:
         - repoUrl
