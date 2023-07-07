@@ -69,6 +69,7 @@ spec:
 
     - id: replace-package-name
       type: file
+      action: filesystem.patch
       targets:
         - path: "package.json"
           content: |
