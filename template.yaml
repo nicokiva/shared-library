@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: example-nodejs-template-2
-  title: Example Node.js Template 2
+  name: react-next-template
+  title: Example React & Next Template
   description: An example template for the scaffolder that creates a simple Node.js service
   tags: ['react-js', 'next']
 spec:
@@ -15,9 +15,9 @@ spec:
   parameters:
     - title: Fill in some steps
       required:
-        - name
+        - packageName
       properties:
-        name:
+        packageName:
           title: Name
           type: string
           description: Unique name of the component
@@ -70,6 +70,15 @@ spec:
         allowedHosts: ['github.com']
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
+
+    - id: replace-package-name
+      type: file
+      targets:
+        - path: "package.json"
+          content: |
+            {
+              "name": "${{ parameters.packageName }}"
+            }
 
     # The final step is to register our new component in the catalog.
     - id: register
