@@ -69,7 +69,7 @@ spec:
 
     - id: replace-package-name
       type: file
-      action: filesystem.patch
+      action: fravega:rename-package-lock
       targets:
         - path: "package.json"
           content: |
