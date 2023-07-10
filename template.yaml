@@ -31,7 +31,6 @@ spec:
       properties:
         owner:
           title: Owner
-          type: string
           description: Owner of the project
           ui:field: OwnerPicker
           ui:options:
