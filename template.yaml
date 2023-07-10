@@ -5,7 +5,7 @@ metadata:
   name: react-next-template
   title: Example React & Next Template
   description: An example template for the scaffolder that creates a simple Node.js service
-  tags: ['react-js', 'next']
+  tags: ["react-js", "next"]
 spec:
   owner: group:devs
   type: website
@@ -54,7 +54,7 @@ spec:
       name: Fetch Base
       action: fetch:template
       input:
-        url: ./
+        url: ./skeleton
         values:
           name: ${{ parameters.packageName }}
 
@@ -63,7 +63,7 @@ spec:
       name: Publish
       action: publish:github
       input:
-        allowedHosts: ['github.com']
+        allowedHosts: ["github.com"]
         description: This is ${{ parameters.packageName }}
         repoUrl: ${{ parameters.repoUrl }}
         name: ${{ parameters.packageName }}
@@ -74,7 +74,7 @@ spec:
       action: catalog:register
       input:
         repoContentsUrl: ${{ steps['publish'].output.repoContentsUrl }}
-        catalogInfoPath: '/catalog-info.yaml'
+        catalogInfoPath: "/catalog-info.yaml"
 
   # Outputs are displayed to the user after a successful execution of the template.
   output:
