@@ -56,7 +56,7 @@ spec:
       input:
         url: ./skeleton
         values:
-          name: ${{ parameters.packageName }}
+          packageName: ${{ parameters.packageName }}
 
     # This step publishes the contents of the working directory to GitHub.
     - id: publish
