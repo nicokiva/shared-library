@@ -68,14 +68,9 @@ spec:
         repoUrl: ${{ parameters.repoUrl }}
 
     - id: replace-package-name
-      type: file
       action: fravega:rename-package-lock
-      targets:
-        - path: "package.json"
-          content: |
-            {
-              "name": "${{ parameters.packageName }}"
-            }
+      input:
+        appName: ${{ parameters.packageName }}
 
     # The final step is to register our new component in the catalog.
     - id: register
