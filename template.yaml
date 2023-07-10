@@ -56,7 +56,7 @@ spec:
       input:
         url: ./
         values:
-          name: ${{ parameters.name }}
+          name: ${{ parameters.packageName }}
 
     # This step publishes the contents of the working directory to GitHub.
     - id: publish
@@ -64,7 +64,7 @@ spec:
       action: publish:github
       input:
         allowedHosts: ['github.com']
-        description: This is ${{ parameters.name }}
+        description: This is ${{ parameters.packageName }}
         repoUrl: ${{ parameters.repoUrl }}
 
     #- id: replace-package-name
