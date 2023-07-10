@@ -1,5 +1,5 @@
 {
-  "name": "shared-library",
+  "name": "${{ parameters.packageName }}",
   "version": "0.1.0",
 
   "dependencies": {
