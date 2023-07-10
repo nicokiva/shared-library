@@ -67,10 +67,10 @@ spec:
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
 
-    - id: replace-package-name
-      action: fravega:rename-package-lock
-      input:
-        appName: ${{ parameters.packageName }}
+    #- id: replace-package-name
+    #  action: fravega:rename-package-lock
+    #  input:
+    #    appName: ${{ parameters.packageName }}
 
     # The final step is to register our new component in the catalog.
     - id: register
